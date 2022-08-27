@@ -1,3 +1,6 @@
+import './style.css'
+import * as THREE from 'three'
+
 // Scene
 const scene = new THREE.Scene();
 
@@ -7,7 +10,7 @@ const material = new THREE.MeshBasicMaterial({color: 'red'})
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh);
 
-// Camera - FOV=fiels of view
+// Camera - FOV=fields of view
 const sizes = {
     width: 800,
     height: 600
